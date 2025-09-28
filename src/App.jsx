@@ -15,16 +15,16 @@ function App() {
     <Router>
       <div className="d-flex">
         <Sidebar />
-        
+
         <div className="container-fluid p-4">
-            <Routes>
-                <Route path="/" element={<HomePage />} />
-                <Route path="/station" element={<StationPage />} />
-                <Route path="/wagon" element={<WagonPage />} />
-                <Route path="/container" element={<ContainerPage />} />
-                <Route path="/loadcode" element={<LoadCodePage />} />
-                <Route path="/stationclass" element={<StationClassPage />} />
-            </Routes>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/station" element={<StationPage />} />
+            <Route path="/wagon" element={<WagonPage />} />
+            <Route path="/container" element={<ContainerPage />} />
+            <Route path="/loadcode" element={<LoadCodePage />} />
+            <Route path="/stationclass" element={<StationClassPage />} />
+          </Routes>
         </div>
       </div>
     </Router>

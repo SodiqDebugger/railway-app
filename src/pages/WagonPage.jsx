@@ -13,10 +13,10 @@ function WagonPage() {
       return;
     }
     setError('');
-    
+
     // Nazorat sonini hisoblash funksiyasini chaqiramiz
     const checkDigit = calculateWagonCheckDigit(wagonNumber);
-    
+
     setResult({
       input: wagonNumber,
       calculated: checkDigit
@@ -27,7 +27,7 @@ function WagonPage() {
     <div className="p-4">
       <h2 className="mb-4">Vagon Nazorat Raqamini Hisoblash</h2>
       <p>Vagon raqamining birinchi 7 ta raqamini kiriting, dastur nazorat raqamini hisoblab beradi.</p>
-      
+
       <div className="mb-3">
         <label htmlFor="wagonInput" className="form-label">Vagon raqami (7 ta raqam):</label>
         <div className="input-group">
@@ -43,7 +43,7 @@ function WagonPage() {
         </div>
         {error && <div className="text-danger mt-2">{error}</div>}
       </div>
-      
+
       {result && (
         <div className="mt-4 p-3 bg-light border rounded">
           <h4>Natija:</h4>

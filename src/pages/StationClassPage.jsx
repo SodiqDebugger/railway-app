@@ -28,7 +28,7 @@ function StationClassPage() {
         // Bu yerda sizning hisoblash mantiqingiz joylashadi.
         // Hozircha, misol sifatida shart qo'yamiz
         const totalValue = Object.values(formData).reduce((sum, val) => sum + (Number(val) || 0), 0);
-        
+
         if (totalValue > 100) {
             setResult("Hisoblangan sinf: Birinchi klass");
         } else {
@@ -83,9 +83,9 @@ function StationClassPage() {
                     <input type="number" className="form-control" name="sortingWork" value={formData.sortingWork} onChange={handleInputChange} />
                 </div>
             </div>
-            
+
             <button className="btn btn-primary mt-4" onClick={handleCalculate}>Aniqalash</button>
-            
+
             {result && (
                 <div className="mt-4 p-3 bg-light border rounded">
                     <h4>Natija:</h4>

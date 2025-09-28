@@ -34,7 +34,7 @@ export const calculateContainerCheckDigit = (containerNumber) => {
     'U': 32, 'V': 34, 'W': 35, 'X': 36, 'Y': 37, 'Z': 38
   };
   const weights = [1, 2, 4, 8, 16, 32, 64, 128, 256, 512];
-  
+
   const formattedNumber = containerNumber.toUpperCase();
   if (formattedNumber.length !== 10) {
     return null;
@@ -44,7 +44,7 @@ export const calculateContainerCheckDigit = (containerNumber) => {
   for (let i = 0; i < 10; i++) {
     const char = formattedNumber[i];
     let value;
-    
+
     if (/[A-Z]/.test(char)) {
       value = letterValues[char];
       if (value === undefined) {
@@ -55,7 +55,7 @@ export const calculateContainerCheckDigit = (containerNumber) => {
     } else {
       return null; // Noto'g'ri belgi
     }
-    
+
     sum += value * weights[i];
   }
 

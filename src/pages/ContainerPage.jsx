@@ -13,9 +13,9 @@ function ContainerPage() {
       return;
     }
     setError('');
-    
+
     const checkDigit = calculateContainerCheckDigit(containerNumber);
-    
+
     setResult({
       input: containerNumber,
       calculated: checkDigit
@@ -26,7 +26,7 @@ function ContainerPage() {
     <div className="p-4">
       <h2 className="mb-4">Konteyner Nazorat Raqamini Hisoblash</h2>
       <p>Konteyner raqamining 10 ta belgisini kiriting, dastur nazorat raqamini hisoblab beradi.</p>
-      
+
       <div className="mb-3">
         <label htmlFor="containerInput" className="form-label">Konteyner raqami (10 ta belgi):</label>
         <div className="input-group">
@@ -42,7 +42,7 @@ function ContainerPage() {
         </div>
         {error && <div className="text-danger mt-2">{error}</div>}
       </div>
-      
+
       {result && (
         <div className="mt-4 p-3 bg-light border rounded">
           <h4>Natija:</h4>

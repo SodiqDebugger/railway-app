@@ -3,8 +3,8 @@ import { stationsData } from '../data/stations';
 
 function StationPage() {
     const [searchTerm, setSearchTerm] = useState('');
-    
-    const filteredStation = stationsData.filter(item => 
+
+    const filteredStation = stationsData.filter(item =>
         String(item.code).includes(searchTerm) || item.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
 
@@ -12,7 +12,7 @@ function StationPage() {
         <div className="p-4">
             <h2 className="mb-4">Stansiyalar</h2>
             <p>Stansiya nomini yoki kodini kiriting.</p>
-            
+
             <div className="mb-4">
                 <input
                     type="text"
@@ -22,7 +22,7 @@ function StationPage() {
                     onChange={(e) => setSearchTerm(e.target.value)}
                 />
             </div>
-            
+
             {filteredStation.length > 0 ? (
                 <div className="table-responsive">
                     <table className="table table-striped table-bordered">

@@ -5,7 +5,7 @@ function LoadCodePage() {
     const [searchTerm, setSearchTerm] = useState('');
 
     // Qidiruv so'ziga mos keladigan ma'lumotlarni filtrlash
-    const filteredData = loadCodesData.filter(item => 
+    const filteredData = loadCodesData.filter(item =>
         String(item.code).includes(searchTerm)
     );
 
