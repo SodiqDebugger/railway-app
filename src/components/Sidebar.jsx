@@ -6,7 +6,7 @@ function Sidebar() {
     return (
         <div className="d-flex flex-column p-3 text-white bg-dark" style={{ width: '280px', height: '100vh' }}>
             <a href="/" className="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                <span className="fs-4">TDTU</span>
+                <span className="fs-4">TSTU</span>
             </a>
             <hr />
             <ul className="nav nav-pills flex-column mb-auto">
